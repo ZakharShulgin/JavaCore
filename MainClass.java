@@ -15,7 +15,7 @@ public class MainClass {
         System.out.println("Enter the number of participants: ");
         int amount = in.nextInt();
         while (amount > 0 && (amount & (amount - 1)) == 0) { // проверяем, что введённое число - степень 2
-            System.out.println("the number of participants must be a power of two. Enter the number of participants: ");
+            System.out.println("The number of participants must be a power of two. Enter the number of participants: ");
             amount = in.nextInt();
         }
         in.close();
@@ -29,9 +29,9 @@ public class MainClass {
     }
 
     public static void main(String[] args) {
+        Tree tree = new Tree();
         Scanner in = new Scanner(System.in);
-        int select;
-        int amount;
+        int select, amount, numberOfLaps;
         do {
             showMenu();
             select = in.nextInt();
@@ -39,7 +39,7 @@ public class MainClass {
             switch(select) {
                 case 1:
                     amount = requestCommandNumber();
-                    calculationLog(amount);
+                    numberOfLaps = calculationLog(amount);
                     break;
                 case 2:
 
