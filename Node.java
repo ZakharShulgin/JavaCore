@@ -15,19 +15,19 @@ public class Node {
         this.rightChild = null;
     }
 
-    public void PrintNode() {
+    public void printNode() {
         System.out.println(CommandName1 + ": " + Score1);
         System.out.println(CommandName2 + ": " + Score2);
     }
 
-    public String GetWinner() {
+    public String getWinner() {
         if (this.Score1 > this.Score2) {
             return this.CommandName1;
         }
         return this.CommandName2;
     }
 
-    public void SetValue(final String CommandName1, final String CommandName2, final int Score1, final int Score2) {
+    public void setValue(final String CommandName1, final String CommandName2, final int Score1, final int Score2) {
         this.CommandName1 = CommandName1;
         this.CommandName2 = CommandName2;
         this.Score1 = Score1;
@@ -36,19 +36,19 @@ public class Node {
         this.rightChild = null;
     }
 
-    public Node GetLeftChild() {
+    public Node getLeftChild() {
         return this.leftChild;
     }
 
-    public void GetLeftChild(final Node leftChild) {
+    public void getLeftChild(final Node leftChild) {
         this.leftChild = leftChild;
     }
 
-    public Node GetRightChild() {
+    public Node getRightChild() {
         return this.rightChild;
     }
 
-    public void SetRightChild(final Node rightChild) {
+    public void setRightChild(final Node rightChild) {
         this.rightChild = rightChild;
     }
 

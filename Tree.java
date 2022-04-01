@@ -9,14 +9,14 @@ public class Tree {
 
     public void InsertNode(String CommandName1, String CommandName2, int Score1, int Score2) {
         Node newNode = new Node();
-        newNode.SetValue(CommandName1, CommandName2, Score1, Score2);
+        newNode.setValue(CommandName1, CommandName2, Score1, Score2);
         if (rootNode == null) {
             rootNode = newNode;
         }
     }
 
     // ранее использовалось для отрисовки дерева
-   /* public void PrintTree() {
+   /* public void printTree() {
         Stack globalStack = new Stack();
         globalStack.push(rootNode);
         int gaps = 32;
