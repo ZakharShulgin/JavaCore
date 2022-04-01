@@ -1,54 +1,54 @@
 public class Node {
-    private String CommandName1;
-    private int Score1;
-    private String CommandName2;
-    private int Score2;
+    private String commandName1;
+    private int score1;
+    private String commandName2;
+    private int score2;
     private Node leftChild;
     private Node rightChild;
 
     public Node() {
-        this.CommandName1 = "";
-        this.CommandName2 = "";
-        this.Score1 = 0;
-        this.Score2 = 0;
+        this.commandName1 = "";
+        this.commandName2 = "";
+        this.score1 = 0;
+        this.score2 = 0;
         this.leftChild = null;
         this.rightChild = null;
     }
 
-    public void PrintNode() {
-        System.out.println(CommandName1 + ": " + Score1);
-        System.out.println(CommandName2 + ": " + Score2);
+    public void printNode() {
+        System.out.println(commandName1 + ": " + score1);
+        System.out.println(commandName2 + ": " + score2);
     }
 
-    public String GetWinner() {
-        if (this.Score1 > this.Score2) {
-            return this.CommandName1;
+    public String getWinner() {
+        if (this.score1 > this.score2) {
+            return this.commandName1;
         }
-        return this.CommandName2;
+        return this.commandName2;
     }
 
-    public void SetValue(final String CommandName1, final String CommandName2, final int Score1, final int Score2) {
-        this.CommandName1 = CommandName1;
-        this.CommandName2 = CommandName2;
-        this.Score1 = Score1;
-        this.Score2 = Score2;
+    public void setValue(final String CommandName1, final String CommandName2, final int Score1, final int Score2) {
+        this.commandName1 = CommandName1;
+        this.commandName2 = CommandName2;
+        this.score1 = Score1;
+        this.score2 = Score2;
         this.leftChild = null;
         this.rightChild = null;
     }
 
-    public Node GetLeftChild() {
+    public Node getLeftChild() {
         return this.leftChild;
     }
 
-    public void GetLeftChild(final Node leftChild) {
+    public void getLeftChild(final Node leftChild) {
         this.leftChild = leftChild;
     }
 
-    public Node GetRightChild() {
+    public Node getRightChild() {
         return this.rightChild;
     }
 
-    public void SetRightChild(final Node rightChild) {
+    public void setRightChild(final Node rightChild) {
         this.rightChild = rightChild;
     }
 
